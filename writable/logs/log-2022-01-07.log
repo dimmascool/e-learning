@@ -1,0 +1,139 @@
+CRITICAL - 2022-01-07 01:09:45 --> Call to undefined method App\Controllers\Learning::modelPelajar()
+#0 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->submitRegister()
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-01-07 01:10:02 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-01-07 01:10:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 E:\xampp\htdocs\E-Learning\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 E:\xampp\htdocs\E-Learning\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#2 E:\xampp\htdocs\E-Learning\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 E:\xampp\htdocs\E-Learning\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 E:\xampp\htdocs\E-Learning\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#5 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(37): CodeIgniter\Model->insert(Array)
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->submitRegister()
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#8 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-01-07 01:19:29 --> Invalid file: login.php
+#0 E:\xampp\htdocs\E-Learning\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#2 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(58): view('login')
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->login()
+#4 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-01-07 01:20:00 --> Undefined variable: title
+#0 E:\xampp\htdocs\E-Learning\app\Views\E-Learning\login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 13, Array)
+#1 E:\xampp\htdocs\E-Learning\system\View\View.php(214): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\E-Learning\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('/E-Learning/log...', Array, true)
+#4 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(58): view('/E-Learning/log...')
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->login()
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 01:27:02 --> Class 'App\Controllers\LoginModel' not found
+#0 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-01-07 03:27:11 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 67, Array)
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 03:27:24 --> Undefined variable: session
+#0 E:\xampp\htdocs\E-Learning\app\Views\E-Learning\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 38, Array)
+#1 E:\xampp\htdocs\E-Learning\system\View\View.php(214): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\E-Learning\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('/E-Learning/log...', Array, true)
+#4 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(58): view('/E-Learning/log...', Array)
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->login()
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 03:27:27 --> Undefined variable: session
+#0 E:\xampp\htdocs\E-Learning\app\Views\E-Learning\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 38, Array)
+#1 E:\xampp\htdocs\E-Learning\system\View\View.php(214): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\E-Learning\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('/E-Learning/log...', Array, true)
+#4 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(58): view('/E-Learning/log...', Array)
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->login()
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 03:27:37 --> Undefined variable: session
+#0 E:\xampp\htdocs\E-Learning\app\Views\E-Learning\login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 38, Array)
+#1 E:\xampp\htdocs\E-Learning\system\View\View.php(214): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\E-Learning\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('/E-Learning/log...', Array, true)
+#4 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(58): view('/E-Learning/log...', Array)
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->login()
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-07 03:27:51 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 67, Array)
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 03:28:33 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 67, Array)
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 03:29:00 --> Trying to access array offset on value of type null
+#0 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'E:\\xampp\\htdocs...', 67, Array)
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 03:29:09 --> syntax error, unexpected '{', expecting '('
+#0 E:\xampp\htdocs\E-Learning\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('learning/auth')
+#1 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('learning/auth')
+#2 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-07 05:03:48 --> Undefined variable: title
+#0 E:\xampp\htdocs\E-Learning\app\Views\E-Learning\login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'E:\\xampp\\htdocs...', 13, Array)
+#1 E:\xampp\htdocs\E-Learning\system\View\View.php(214): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\E-Learning\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 E:\xampp\htdocs\E-Learning\system\Common.php(1097): CodeIgniter\View\View->render('/E-Learning/log...', Array, true)
+#4 E:\xampp\htdocs\E-Learning\app\Controllers\Learning.php(79): view('/E-Learning/log...')
+#5 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(824): App\Controllers\Learning->auth()
+#6 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Learning))
+#7 E:\xampp\htdocs\E-Learning\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\E-Learning\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 E:\xampp\htdocs\E-Learning\system\Commands\Server\rewrite.php(43): require_once('E:\\xampp\\htdocs...')
+#10 {main}
