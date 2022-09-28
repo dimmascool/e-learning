@@ -31,10 +31,46 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// Universal
 $routes->get('/', 'Learning::index');
+$routes->get('/logout', 'Learning::logout');
+
+
+// Pelajar
 $routes->get('/register', 'Learning::register');
 $routes->get('/login', 'Learning::login');
-$routes->get('/logout', 'Learning::logout');
+$routes->get('/learning', 'Learning::information');
+$routes->get('/learning/information', 'Learning::information');
+$routes->get('/learning/materi', 'Learning::materi');
+$routes->get('/learning/materi/(:segment)', 'Learning::detailMateri/$1');
+$routes->get('/learning/tugas', 'Learning::tugas');
+$routes->get('/learning/tugas/(:segment)', 'Learning::detailTugas/$1');
+$routes->get('/learning/latihan/', 'Learning::latihan');
+$routes->get('/learning/latihan/(:segment)', 'Learning::pertanyaanLatihan/$1');
+
+// Guru
+$routes->get('/loginguru', 'Learning::loginGuru');
+$routes->get('/halamanguru', 'Learning::halamanGuru');
+$routes->get('/guru/buat_materi', 'Learning::buatMateri');
+$routes->get('/guru/materi', 'Learning::materiGuru');
+$routes->get('/guru/materi/(:segment)', 'Learning::detailMateriGuru/$1');
+$routes->get('/guru/edit_materi/(:segment)', 'Learning::editMateri/$1');
+$routes->get('/guru/hapus_materi/(:segment)', 'Learning::hapus_materi/$1');
+$routes->get('/guru/latihan', 'Learning::latihanGuru');
+$routes->get('/guru/latihan_soal/(:segment)', 'Learning::latihanSoal/$1');
+$routes->get('/guru/buat_soal', 'Learning::buatSoalBaru');
+$routes->get('/guru/tugas', 'Learning::tugasGuru');
+$routes->get('/guru/tugas/(:segment)', 'Learning::detailTugasGuru/$1');
+$routes->get('/guru/buat_tugas', 'Learning::tambahTugas');
+$routes->get('/guru/menu_penilaian_tugas', 'Learning::menuNilaiTugas');
+$routes->get('/guru/penilaian_tugas/(:segment)', 'Learning::NilaiTugas/$1');
+$routes->get('/guru/penilaian_tugas/', 'Learning::NilaiTugas');
+$routes->get('/guru/nilai_tugas/(:segment)', 'Learning::ngasihNilaiTugas/$1');
+
+
+
+
 
 /*
  * --------------------------------------------------------------------

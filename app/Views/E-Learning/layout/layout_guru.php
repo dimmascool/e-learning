@@ -47,7 +47,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url() ?>/learning/information">
+                <a class="nav-link" href="<?= base_url() ?>/halamanguru">
                     <i class="fas fa-info"></i>
                     <span>Papan Informasi</span></a>
             </li>
@@ -68,9 +68,23 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Kegiatan Belajar</h6>
-                        <a class="collapse-item" href="/learning/materi">Materi</a>
-                        <a class="collapse-item" href="/learning/latihan">Latihan</a>
-                        <a class="collapse-item" href="/learning/tugas">Tugas</a>
+                        <a class="collapse-item" href="/guru/materi">Materi</a>
+                        <a class="collapse-item" href="/guru/latihan">Latihan</a>
+                        <a class="collapse-item" href="/guru/tugas">Tugas</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#swer"
+                    aria-expanded="true" aria-controls="swer">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <span>Penilaian</span>
+                </a>
+                <div id="swer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Penilaian</h6>
+                        <a class="collapse-item" href="/guru/penilaian_tugas">Tugas</a>
                     </div>
                 </div>
             </li>
@@ -82,15 +96,15 @@
             <!-- Heading -->
 
             <div class="sidebar-heading">
-                Pelajar
+                Guru
             </div>
 
             <!-- Nav Item - Dashboard -->
             
-            
+
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url() ?>/learning/information">
+                <a class="nav-link" href="<?= base_url() ?>/logout">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span></a>
             </li>
@@ -129,7 +143,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user ?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $guru ?></span>
                                 <img class="img-profile rounded-circle"
                                     src="<?= base_url() ?>/img/undraw_profile.svg">
                             </a>
@@ -206,14 +220,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url(); ?>/vendor/jquery/jquery.min.js"></script>
-    <script src="<?= base_url(); ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url() ?>/vendor/jquery/jquery.min.js"></script>
+    <script src="<?= base_url() ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="<?= base_url(); ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?= base_url() ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="<?= base_url(); ?>/js/sb-admin-2.min.js"></script>
+    <script src="<?= base_url() ?>/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="<?= base_url() ?>/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url() ?>/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?= base_url() ?>/js/demo/datatables-demo.js"></script>
 
 </body>
 

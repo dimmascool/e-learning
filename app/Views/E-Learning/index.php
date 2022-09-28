@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>E-Learning | Platform Belajar Online</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -47,7 +47,7 @@
 
                     <!-- Topbar Navbar -->
                     <button class="btn btn-secondary btn-sm mr-2" > E-Learning </button>
-                    <button class="btn btn-secondary btn-sm mr-2" > Friday 2022-01-07 | 5:36</button>
+                    <button class="btn btn-secondary btn-sm mr-2" ><?= date("F j, Y | g:i a");  ?></button>
                     <ul class="navbar-nav ml-auto">                                                
 
                         <div class="topbar-divider d-none d-sm-block"></div>
@@ -64,10 +64,6 @@
                                 <!-- Dropdown - User Information -->
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                     aria-labelledby="userDropdown">
-                                    <a class="dropdown-item" href="#">
-                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                        Profile
-                                    </a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -113,7 +109,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Kelompok 2 2022</span>
                     </div>
                 </div>
             </footer>

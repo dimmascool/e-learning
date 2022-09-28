@@ -47,9 +47,9 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Login Guru</h1>
                                     </div>
-                                    <form class="user" action="/learning/auth" method="post">
+                                    <form class="user" action="/learning/authguru" method="post">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
@@ -61,11 +61,10 @@
                                         </div>
                                         <input type="submit" class="btn btn-primary btn-user btn-block" value="Login">
                                     </form>
-                                    <hr>
                                     <div class="text-center">
-                                        <a class="small" href="/register">Create an Account!</a>
-                                        <br><a class="small" href="/loginguru">Login sebagai Guru </a>
+                                        <br><a class="small" href="/login">Login sebagai Siswa </a>
                                     </div>
+                                    <hr>
                                 </div>
                             </div>
                         </div>
